@@ -1,0 +1,11 @@
+{
+  "presets": ["@babel/preset-react", "@babel/preset-typescript"],
+  "plugins": ["@babel/plugin-transform-template-literals"],
+  "overrides": [
+    {
+      "include": "./service1",
+      "exclude": "./service1/code2.tsx",
+      "plugins": ["@babel/plugin-transform-arrow-functions"]
+    }
+  ]
+}
